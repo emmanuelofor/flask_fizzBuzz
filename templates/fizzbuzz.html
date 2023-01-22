@@ -1,0 +1,14 @@
+<ul>
+    {% for number in numbers %}
+      {% if number % 15 == 0 %}
+        <li>FizzBuzz</li>
+      {% elif number % 3 == 0 %}
+        <li>Fizz</li>
+      {% elif number % 5 == 0 %}
+        <li>Buzz</li>
+      {% else %}
+        <li>{{ number }}</li>
+      {% endif %}
+    {% endfor %}
+    </ul>
+    
